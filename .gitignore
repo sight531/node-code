@@ -18,7 +18,7 @@ for M = 1:1000
       for n=1:10
           r = rand(1);
           m = S(flag,2);
-          flag = floor(r*m)+1;
+          flag = S(N,floor(r*m)+3);
       end
       W(flag,2) = W(flag,2)+1;
     end
