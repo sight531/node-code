@@ -18,7 +18,9 @@ for M = 1:1000
       for n=1:10
           r = rand(1);
           m = S(flag,2);
-          flag = S(N,int32(floor(r*m)+3));
+          temp = floor(r*m)+3;
+          %temp = int32(temp);
+          flag = S(N,temp);
       end
       W(flag,2) = W(flag,2)+1;
     end
